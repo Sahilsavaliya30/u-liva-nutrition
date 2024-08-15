@@ -6,14 +6,14 @@
     vertical-align: baseline;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html {
     font-size: 1rem;
     scroll-behavior: auto !important;
-  }
-  
-  body {
+}
+
+body {
     display: block;
     width: 100%;
     padding: 0;
@@ -25,71 +25,71 @@
     color: #000;
     background-color: #fff;
     position: relative;
-  }
-  
-  /* HTML5 display-role reset for older browsers */
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  section {
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
-  }
-  
-  ul,
-  ol {
+}
+
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  blockquote,
-  q {
+}
+
+blockquote,
+q {
     quotes: none;
-  }
-  
-  blockquote:before,
-  blockquote:after,
-  q:before,
-  q:after {
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: "";
     content: none;
-  }
-  
-  table {
+}
+
+table {
     border-collapse: collapse;
     border-spacing: 0;
-  }
-  
-  em,
-  i {
+}
+
+em,
+i {
     font-style: italic;
-  }
-  
-  u {
+}
+
+u {
     text-decoration: underline;
-  }
-  
-  p {
+}
+
+p {
     margin-bottom: 20px;
-  }
-  
-  p:last-child {
+}
+
+p:last-child {
     margin-bottom: 0;
-  }
-  
-  b,
-  strong {
+}
+
+b,
+strong {
     font-weight: 700 !important;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #000;
     transition: color 0.4s ease-in-out;
@@ -97,73 +97,255 @@
     -moz-transition: color 0.4s ease-in-out;
     -ms-transition: color 0.4s ease-in-out;
     -o-transition: color 0.4s ease-in-out;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #B6C34D;
     text-decoration: none;
     outline: none !important;
-  }
-  
-  a:focus {
+}
+
+a:focus {
     text-decoration: none;
     outline: none !important;
-  }
-  
-  *:focus {
+}
+
+*:focus {
     outline: none;
-  }
-  
-  img {
+}
+
+img {
     display: block;
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
-  }
-  
-  /*----------  Common CSS  ----------*/
-  .wrapper {
+}
+
+/*----------  Common CSS  ----------*/
+.wrapper {
     display: block;
     overflow: hidden;
     min-height: 100vh;
     position: relative;
-  }
-  
-  .body-fixed {
+}
+
+.body-fixed {
     overflow: hidden;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1356px;
     padding: 0 30px;
-  }
-  
-  .common-sec {
+}
+
+.common-sec {
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-  
-  .sec-head {
+}
+
+.sec-head {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-  }
-  
-  :is(h1, h2, h3, h4, h5, h6),
-  .sec-title,
-  .sec-sub-title {
+}
+
+:is(h1, h2, h3, h4, h5, h6),
+.sec-title,
+.sec-sub-title {
     font-family: "Montserrat", sans-serif;
-  }
-  
-  .sec-title {
+}
+
+.sec-title {
     margin: 0;
     display: block;
     color: #2D4312;
     font-size: 46px;
     font-weight: 700;
     line-height: 1.2;
-  }
-  
-  
+}
+
+/* button */
+
+.btn {
+    border-radius: 30px 0 30px 30px;
+    min-width: 223px;
+    padding: 11px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+
+.btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -1.25rem;
+    background-color: #fff;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 5%;
+    margin: auto;
+    transform: translate(-50%, 30%);
+    z-index: -1;
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover::before {
+    width: 140%;
+}
+
+.btn.btn-green {
+    background-color: #2D4312;
+    color: #fff;
+}
+
+.btn.btn-green:hover {
+    color: #B6C34D;
+    background-color: #B6C34D;
+}
+
+/* button */
+
+/* header */
+
+.header-main {
+    background-color: #fff;
+    position: relative;
+    z-index: 9;
+    padding: 18px 0;
+}
+
+.header-main .container{
+    max-width: 1478px;
+}
+
+.site-logo img {
+    max-width: 120px;
+    width: 100%
+}
+.sidebar-overlay {
+    visibility: hidden;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #000;
+    z-index: 998
+}
+
+.navigation-bar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+}
+
+.mb-menu-logo {
+    display: none
+}
+
+.nav-menu-main ul {
+    display: flex;
+    align-items: center
+}
+
+.navbar-main .nav-menu-main ul li {
+    display: flex
+}
+
+.navbar-main .nav-menu-main ul li a {
+    color: #2D4312;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: block;
+    text-align: left;
+    padding: 15px 24px;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-main .nav-menu-main ul li a:hover,.navbar-main .nav-menu-main ul li.active a{
+    color: #B6C34D;
+    font-weight: 700;
+}
+
+.header-main.has-sticky {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    background: #fff;
+    backdrop-filter: blur(50px);
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    z-index: 999
+}
+
+.menu-icon {
+    display: none;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 15px;
+    color: #333
+}
+
+.menu-icon span {
+    display: block;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background: #333;
+    margin: auto
+}
+
+.menu-icon span:before {
+    content: "";
+    width: 25px;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    height: 2px;
+    background: currentColor
+}
+
+.menu-icon span:after {
+    content: "";
+    width: 25px;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    height: 2px;
+    background: currentColor
+}
+
+.body-fixed {
+    overflow: hidden
+}
+
+.header-main .head-btn{
+    display: inline-block;
+    vertical-align: middle;
+}
+/* header */
