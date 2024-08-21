@@ -316,6 +316,7 @@
     .cms-con ul li {
         font-size: 14px;
         margin-bottom: 12px;
+        padding-left: 30px;
     }
     .cms-con ol li {
         font-size: 14px;
@@ -325,7 +326,9 @@
         margin-bottom: 0;
     }
     .cms-con ul li:before {
-        top: 5px;
+        top: 2px;
+        width: 20px;
+        height: 20px;
     }
     .cms-con ul li ul li {
         padding-left: 14px;
