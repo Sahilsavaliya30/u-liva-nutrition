@@ -55,4 +55,71 @@ jQuery(document).ready(function ($) {
             },
         ],
     });
+
+    $(".product-highlight-silder").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        appendArrows: '.product-highlight-arrow',
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 500,
+        infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 1299,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                },
+            },
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                },
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows:false,
+                },
+            },
+        ],
+    });
+
+    $(".certification-img-wrapper").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 500,
+        infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                },
+            },
+        ],
+    });
 });
