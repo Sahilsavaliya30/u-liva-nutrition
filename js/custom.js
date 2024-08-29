@@ -2,6 +2,18 @@ new WOW().init();
 var $ = jQuery.noConflict();
 jQuery(document).ready(function ($) {
 
+    function appHeight() {
+        let header = document.querySelector('header');
+        document.documentElement.style.setProperty(
+            "--header-height",
+            `${header.offsetHeight}px`
+        );
+    }
+    appHeight();
+    $(window).resize(function () {
+        appHeight();
+    });
+
     $(".menu-icon").click(function () {
         $(this).toggleClass("menu-close");
         $(".navigation-bar").toggleClass("slide-menu");
@@ -88,7 +100,7 @@ jQuery(document).ready(function ($) {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    arrows:false,
+                    arrows: false,
                 },
             },
         ],
