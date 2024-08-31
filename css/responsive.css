@@ -122,8 +122,17 @@
         column-gap: 70px;
     }
 
-    .about-box-con, .about-box-img {
+    .about-box-con,
+    .about-box-img {
         width: calc(50% - 35px);
+    }
+
+    .contact-us-box-title {
+        font-size: 22px;
+    }
+
+    .page-heading .line-animation {
+        max-width: 70%;
     }
 }
 
@@ -384,11 +393,11 @@
         display: none;
     }
 
-    .latest-blog-sec.common-sec{
+    .latest-blog-sec.common-sec {
         padding-top: 50px;
     }
 
-    .cta-sec .zigzag-animation{
+    .cta-sec .zigzag-animation {
         display: none;
     }
 
@@ -410,7 +419,8 @@
         margin-bottom: 80px;
     }
 
-    .about-box-con, .about-box-img {
+    .about-box-con,
+    .about-box-img {
         width: calc(50% - 25px);
     }
 
@@ -473,7 +483,8 @@
         margin-bottom: 60px;
     }
 
-    .about-box-con, .about-box-img {
+    .about-box-con,
+    .about-box-img {
         width: 100%;
     }
 
@@ -493,6 +504,49 @@
 
     .about-banner-boxes {
         padding-bottom: 50px;
+    }
+
+    .contact-details-sec .contact-us-box {
+        padding: 20px;
+    }
+
+    .page-heading.contact-us-page-heading {
+        padding: 60px 0;
+    }
+
+    .contact-us-box .img-box {
+        width: 60px;
+        height: 60px;
+        flex: 0 0 60px;
+    }
+
+    .contact-form {
+        margin-right: 20px;
+    }
+
+    .contact-form .sec-head {
+        margin-bottom: 40px;
+    }
+
+    .manufacturing-unit-con {
+        padding: 20px;
+    }
+
+    .manufacturing-unit-con-title {
+        margin-bottom: 20px;
+    }
+
+    .manufacturing-unit-item .cms-con p,
+    .manufacturing-unit-item .cms-con a {
+        font-size: 16px;
+    }
+
+    .contact-from-sec.common-sec {
+        padding-bottom: 80px;
+    }
+
+    .certification-img-box {
+        height: 93px;
     }
 }
 
@@ -775,6 +829,71 @@
         margin-bottom: 40px;
         padding: 0 20px;
     }
+
+    .contact-details-sec .row>* {
+        height: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .contact-from-sec.common-sec {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .manufacturing-unit-item .cms-con p,
+    .manufacturing-unit-item .cms-con a {
+        max-width: 500px;
+    }
+
+    .contact-form {
+        margin-right: 0;
+        margin-top: 40px;
+    }
+
+    textarea.form-control {
+        height: 150px;
+    }
+
+    .contact-form .btn {
+        margin-top: 0;
+    }
+
+    .page-heading.contact-us-page-heading {
+        padding: 50px 0;
+    }
+
+    .contact-us-box .img-box {
+        width: 50px;
+        height: 50px;
+        flex: 0 0 50px;
+    }
+
+    .manufacturing-unit-list .manufacturing-unit-item {
+        margin-bottom: 20px;
+    }
+
+    .manufacturing-unit-item .img-box {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+        margin-right: 10px;
+    }
+
+    .manufacturing-unit-item .cms-con a {
+        margin-top: 0;
+    }
+
+    .contact-form .sec-head .sec-title {
+        font-size: 30px;
+    }
+
+    .certification-sec.common-sec {
+        padding-bottom: 50px;
+    }
+
+    .certification-sec .sec-title{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -789,7 +908,8 @@
         padding: 7px 15px;
     }
 
-    .container {
+    .container,
+    .container-lg {
         padding: 0 15px;
     }
 
@@ -803,6 +923,18 @@
 
     .business-model-wrap .sec-head {
         margin: 0 auto 42px;
+    }
+
+    .contact-form .btn {
+        min-width: 140px;
+    }
+
+    textarea.form-control {
+        height: 100px;
+    }
+
+    .certification-sec .sec-head {
+        margin-bottom: 25px;
     }
 }
 
@@ -1008,6 +1140,180 @@
     .business-model-img {
         margin-bottom: 20px;
     }
+
+    .page-heading .line-animation {
+        display: none;
+    }
+
+    .page-heading .page-title .title {
+        font-size: 26px;
+    }
+
+    .page-heading .breadcrumb li:not(:first-child)::before {
+        padding: 0 5px;
+    }
+
+    .page-heading.contact-us-page-heading,
+    .page-heading {
+        padding: 40px 0;
+    }
+
+    .contact-details-sec .contact-us-box::before {
+        width: 80px;
+        height: 80px;
+        right: -40px;
+    }
+
+    .contact-us-box-title {
+        font-size: 18px;
+    }
+
+    .manufacturing-unit-con::before {
+        width: 80px;
+        height: 80px;
+        right: -40px;
+    }
+
+    .manufacturing-unit-item .cms-con p,
+    .manufacturing-unit-item .cms-con a {
+        font-size: 14px;
+    }
+
+    .contact-details-sec .contact-us-box {
+        padding: 15px;
+    }
+
+    .contact-from-sec.common-sec {
+        padding-top: 30px;
+    }
+
+    .manufacturing-unit-con-title {
+        font-size: 22px;
+    }
+
+    .contact-form .sec-head .sec-title {
+        font-size: 28px;
+    }
+
+    .contact-form .sec-head {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .contact-us-box .img-box {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+        margin-right: 15px;
+    }
+
+    .about-box-img {
+        max-width: 96%;
+        margin-bottom: 50px;
+    }
+
+    .about-box-img::before {
+        bottom: -10px;
+        right: -10px;
+    }
+
+    .about-box-wrapper .about-box-main:nth-child(even) .about-box-img::before {
+        left: -10px;
+    }
+
+    .our-values-main {
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .our-values-sec .container-lg {
+        padding: 0;
+    }
+
+    .our-values-con-wrapper .our-values-img {
+        height: 70px;
+        flex: 0 0 70px;
+        width: 70px;
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+
+    .our-values-con-wrapper {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .our-values-sec-heading {
+        margin-bottom: 30px;
+    }
+
+    .our-values-con-des {
+        font-size: 14px;
+    }
+
+    .our-values-con-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .leader-box .leader-dp {
+        height: 190px;
+    }
+
+    .leader-box-main .row {
+        --bs-gutter-x: 15px;
+        justify-content: center;
+    }
+
+    .leader-box-main .row>*{
+        margin-bottom: 20px;
+    }
+
+    .leadership-sec{
+        padding: 50px 0;
+    }
+
+    .certification-img-main .slick-slide {
+        margin: 0;
+    }
+
+    .certification-img-box {
+        height: 60px;
+    }
+
+    .leader-box .leader-name{
+        font-size: 18px;
+    }
+
+    .leader-designation{
+        font-size: 14px;
+    }
+
+    .certification-sec .sec-title{
+        font-size: 28px;
+    }
+
+    .slick-dots li button{
+        width: 10px;
+        height: 10px;
+    }
+
+    .slick-dots{
+        margin-top: 20px;
+    }
+
+    .footer-box{
+        margin-bottom: 30px;
+    }
+
 }
 
 @media only screen and (max-width:489px) {}
@@ -1019,5 +1325,9 @@
 
     .hero-banner-con .banner-title {
         font-size: 22px;
+    }
+
+    .leader-box .leader-dp {
+        height: 170px;
     }
 }

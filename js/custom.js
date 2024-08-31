@@ -121,14 +121,14 @@ jQuery(document).ready(function ($) {
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                     slidesToScroll: 1
                 },
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
                     slidesToScroll: 1
                 },
             },

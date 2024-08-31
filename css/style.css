@@ -1686,7 +1686,8 @@ img {
 }
 
 .certification-img-main {
-    padding: 0 82px;
+    max-width: 1142px;
+    margin: auto;
 }
 
 .certification-img-box {
@@ -1697,14 +1698,6 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-.certification-img-main .slick-slide {
-    margin: 0 30px;
-}
-
-.certification-img-main .slick-list {
-    margin: 0 -30px;
 }
 
 /* about us page */
@@ -1896,6 +1889,7 @@ img {
     background-image: url(../img/svg/down-arrow.svg);
     background-repeat: no-repeat;
     background-size: 10px;
+    padding: 17px 50px 17px 25px;
     background-position: right 20px center;
 }
 
